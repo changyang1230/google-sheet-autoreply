@@ -9,14 +9,15 @@ This Python script parses the standard request and extracts the email address (t
 
 1. You have to obtain an app password for your GMail account first. ([Instruction](https://support.google.com/mail/answer/185833?hl=en))
 
-2. In **config.ini**, replace your **password** with the _app-password_ (DO NOT use your actual password) and **username** with your email address (_youremailaddress@gmail.com_)
+2. In **config.ini**, replace
+   - your **password** with the _app-password_ (DO NOT use your actual password), and
+   - **username** with your email address (_youremailaddress@gmail.com_)
 
-3. In autoreply.py, replace
+4. In **autoreply.py**, replace
    - line 31 **TRIGGER SUBJECT** with the subject,
    - line 35 **auto_reply_text** with your own template email text,
-   - line 57 **msg['Subject']** with the reply email subject. 
-
-5. (Optional) In autoreply.py, replace line 151 **line.sleep(300)** with your preferred **interval in seconds**. 
+   - line 57 **msg['Subject']** with the reply email subject,
+   - line 151 **line.sleep(300)** with your preferred **interval in seconds**. 
 
 6. Run the Python script on a suitable machine. I have mine running on RaspberryPi by adding the following line to **/etc/rc.local**. (The path is the folder where the script and config.ini are located)
 
