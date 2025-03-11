@@ -18,3 +18,11 @@ This Python script parses the standard request and extracts the email address (t
 5. Run the Python script on a suitable machine. I have mine running on RaspberryPi by adding the following line to **/etc/rc.local**. (The path is the folder where the script and config.ini are located)
 
    `cd /home/pi/Desktop/AutoReply && sudo python3 autoreply.py &`
+
+## Usage
+
+When properly set up, this script will:
+- Automatically check your email every 5 minutes.
+- Detect standard Google Sheet request email by matching the subject line.
+- Correctly replies to the sender's email address with a canned response (instead of the incorrect reply-to email of Google Sheets). 
+- Mark the sent email as read. 
