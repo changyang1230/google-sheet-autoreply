@@ -27,6 +27,6 @@ This Python script parses the standard request and extracts the email address (t
 
 When properly set up, this script will:
 - Automatically check your email every 5 minutes.
-- Detect standard Google Sheet request email by matching the subject line.
+- Detect unread standard Google Sheet request email by matching the subject line.
 - Correctly replies to the sender's email address with a canned response (instead of the incorrect reply-to email of Google Sheets). 
-- Mark the sent email as read. 
+- Mark both the original email and the reply as read. 
